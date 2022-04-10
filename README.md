@@ -25,4 +25,4 @@ Banco de dados Local com SQLite
 
 Script SQL para Criação das tabelas e insersão de dados.
 
-+ create.sql
++ [Link para o Script SQL](https://github.com/davidsonbss/ApiAlunos/blob/main/ApiAlunos/create.sql "create.sql")
