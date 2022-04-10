@@ -11,7 +11,7 @@ Entidade Aluno
 + Id
 + Matricula
 + Nome
-+ DtNascimento
++ DtNascimento      ( Formato da data a ser inserida "dd/mm/aaaa" )
 
 Entidade Turma
 
