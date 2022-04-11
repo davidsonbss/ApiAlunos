@@ -1,4 +1,5 @@
 using ApiAlunos.Models;
+using ApiAlunos.Models.Converters;
 using ApiAlunos.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -27,7 +28,10 @@ namespace ApiAlunos
             services.AddScoped<ITurmaRepository, TurmaRepository>();
 
 
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.Converters.Add(new DateConverter());
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ApiAlunos", Version = "v1" });

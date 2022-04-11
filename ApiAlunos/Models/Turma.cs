@@ -9,5 +9,14 @@ namespace ApiAlunos.Models
         public String Nome { get; set; }
         public CodeTurno Turno { get; set; }
 
+        public Turma()
+        {
+        }
+        public Turma(int id, string nome, CodeTurno turno)
+        {
+            Id = id;
+            Nome = nome;
+            Turno = turno;
+        }
     }
 }
